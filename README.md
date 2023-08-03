@@ -48,11 +48,11 @@ There are some configuration options the are detailed [here](docs/config.md)
 
 ---
 
-Tracker is an [Aqua Security] open source project.
+Tracker is an [KhulnaSoft Security] open source project.
 Learn about our open source work and portfolio [Here].
 Join the community, and talk to us about any matter in [GitHub Discussion] or [Slack].
 
-[Aqua Security]: https://aquasec.com
+[KhulnaSoft Security]: https://khulnasoft.com
 [GitHub Discussion]: https://github.com/khulnasoft-labs/tracker/discussions
-[Slack]: https://slack.aquasec.com
-[Here]: https://www.aquasec.com/products/open-source-projects/
+[Slack]: https://slack.khulnasoft.com
+[Here]: https://www.khulnasoft.com/products/open-source-projects/
