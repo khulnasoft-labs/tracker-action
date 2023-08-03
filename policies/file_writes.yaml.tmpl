@@ -1,0 +1,9 @@
+name: file_writes
+description: tracker file writes under {{github.workspace}}
+defaultAction: log
+scope:
+  - global
+rules:
+  - event: file_write
+    filter:
+      - args.pathname=$WORKSPACE
