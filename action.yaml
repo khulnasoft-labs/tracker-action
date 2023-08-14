@@ -17,7 +17,7 @@ runs:
       echo "creating file_write policy"
       sed -e "s|\$WORKSPACE|${{github.workspace}}\/*|" ${{github.action_path}}/policies/file_writes.yaml.tmpl > ${{github.action_path}}/policies/file_writes.yaml
       trace_env=$(if [ "${{inputs.envs}}" = "true" ]; then echo "--output option:exec-env"; fi)
-      docker pull khulnasoft-labs/tracker:0.13.1
+      docker pull khulnasoft/tracker:0.13.1
       docker run -d --name tracker --rm \
       --privileged --pid=host --cgroupns=host \
       -e LIBBPFGO_OSRELEASE_FILE=/etc/os-release-host \
@@ -30,7 +30,7 @@ runs:
       -v ${{github.action_path}}/signatures/file_write.rego:/tracker/signatures/file_write.rego \
       -v ${{github.action_path}}/signatures/miner_domain.rego:/tracker/signatures/miner_domain.rego \
       -v ${{github.action_path}}/policies:/tracker/policies \
-      khulnasoft-labs/tracker:0.13.1 \
+      khulnasoft/tracker:0.13.1 \
       -p /tracker/policies \
       --output option:exec-hash $trace_env \
       --output json:/tmp/tracker/out/trace_$GITHUB_RUN_ID.jsonl
