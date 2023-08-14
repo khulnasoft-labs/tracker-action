@@ -4,9 +4,9 @@
 
 # Protect your GitHub Actions with Tracker
 
-[Tracker](https://github.com/khulnasoft-labs/tracker) is a powerful open source runtime security and forensics solution. It is using eBPF to trace your system, produce rich events that gives you visibility into what is happening under the hood, and also detects suspicious behavior in those event.
+[Tracker](https://github.com/khulnasoft/tracker) is a powerful open source runtime security and forensics solution. It is using eBPF to trace your system, produce rich events that gives you visibility into what is happening under the hood, and also detects suspicious behavior in those event.
 
-This project is using Tracker to protect GitHub Actions workflow against supply chain attacks. You can add the `khulnasoft-labs/tracker-action` GitHub Action to your workflow, which will automatically install Tracker in the runner and start tracing it.
+This project is using Tracker to protect GitHub Actions workflow against supply chain attacks. You can add the `khulnasoft-lab/tracker-action` GitHub Action to your workflow, which will automatically install Tracker in the runner and start tracing it.
 
 ## Protection
 
@@ -53,6 +53,6 @@ Learn about our open source work and portfolio [Here].
 Join the community, and talk to us about any matter in [GitHub Discussion] or [Slack].
 
 [KhulnaSoft Security]: https://khulnasoft.com
-[GitHub Discussion]: https://github.com/khulnasoft-labs/tracker/discussions
+[GitHub Discussion]: https://github.com/khulnasoft/tracker/discussions
 [Slack]: https://slack.khulnasoft.com
 [Here]: https://www.khulnasoft.com/products/open-source-projects/
