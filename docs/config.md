@@ -21,7 +21,7 @@ To configure the action, use the `with` keyword in the action definition:
 
 ```yaml
 - name: Stop Tracker
-  uses: khulnasoft-labs/tracker-action@v0.3.0-stop
+  uses: khulnasoft-lab/tracker-action@v0.3.0-stop
   with:
     fail-on-diff: true
     create-pr: true
