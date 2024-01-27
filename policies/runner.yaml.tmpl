@@ -1,8 +1,12 @@
-name: runner
-description: trace runner process tree
-defaultAction: log
-scope:
-  - tree=$RUNNER_PID
-rules:
-  - event: sched_process_exec
-  - event: net_packet_dns
+apiVersion: khulnasoft-lab.github.io/v1beta1
+kind: TrackerPolicy
+metadata:
+  name: runner
+  annotations:
+    description: trace runner process tree
+spec:
+  scope:
+    - tree=$RUNNER_PID
+  rules:
+    - event: sched_process_exec
+    - event: net_packet_dns
